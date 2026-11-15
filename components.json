@@ -30,10 +30,10 @@
       "license": "MIT",
       "platforms": {
         "linux-x86_64": {
-          "version": "b11905",
-          "path": "linux-x86_64/llama.cpp-b11905-linux-x86_64.tar.gz",
-          "size": 10801098,
-          "sha256": "47cf08751ac3e9065321209b98f35cc369cd95e3ec641d28ee97e8db7efc68f3"
+          "version": "1.0.0",
+          "path": "linux-x86_64/llama.cpp-1.0.0-linux-x86_64.tar.gz",
+          "size": 11453985,
+          "sha256": "a05a3e03d1ebe0ef6d39de470bd5ba0fb818470b8111e911101a741468cea4f1"
         }
       }
     }
