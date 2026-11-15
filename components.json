@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "components": {
+    "git": {
+      "name": "Git",
+      "license": "GPL-2.0",
+      "platforms": {
+        "linux-x86_64": {
+          "version": "2.56.0",
+          "path": "linux-x86_64/git-2.56.0-linux-x86_64.tar.gz",
+          "size": 21805836,
+          "sha256": "e96e11d0c996bcb787aa9c4f10c890b426b3550cb80a91305158b5fd357633b6"
+        }
+      }
+    },
+    "whisper.cpp": {
+      "name": "whisper.cpp",
+      "license": "MIT",
+      "platforms": {
+        "linux-x86_64": {
+          "version": "1.9.5",
+          "path": "linux-x86_64/whisper.cpp-1.9.5-linux-x86_64.tar.gz",
+          "size": 2099369,
+          "sha256": "1fa2c361e8b699ade5d9c791801bf56aa5a58dedc9ea026ae42dc0111f9f84e2"
+        }
+      }
+    },
+    "llama.cpp": {
+      "name": "llama.cpp",
+      "license": "MIT",
+      "platforms": {
+        "linux-x86_64": {
+          "version": "b11905",
+          "path": "linux-x86_64/llama.cpp-b11905-linux-x86_64.tar.gz",
+          "size": 10801098,
+          "sha256": "47cf08751ac3e9065321209b98f35cc369cd95e3ec641d28ee97e8db7efc68f3"
+        }
+      }
+    }
+  }
+}

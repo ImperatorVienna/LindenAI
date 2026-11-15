@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "whisper-small-q5",
+      "category": "speech_transcription",
+      "engine": "whisper.cpp",
+      "name": "Whisper Small Q5",
+      "label": {
+        "en": "Standard · Small Q5",
+        "zh": "标准版 · Small Q5",
+        "zht": "標準版 · Small Q5"
+      },
+      "description": {
+        "en": "Multilingual transcription with lower storage and memory use. Recommended for everyday dictation.",
+        "zh": "多语言转写，存储与内存占用更低，适合日常语音输入，默认推荐。",
+        "zht": "多語言轉寫，儲存與記憶體占用更低，適合日常語音輸入，預設推薦。"
+      },
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-small-q5_1.bin",
+      "file": "ggml-small-q5_1.bin",
+      "size": 190085487,
+      "sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb"
+    },
+    {
+      "id": "whisper-turbo-q5",
+      "category": "speech_transcription",
+      "engine": "whisper.cpp",
+      "name": "Whisper Large-v3-Turbo Q5",
+      "label": {
+        "en": "Enhanced · Large-v3-Turbo Q5",
+        "zh": "增强版 · Large-v3-Turbo Q5",
+        "zht": "增強版 · Large-v3-Turbo Q5"
+      },
+      "description": {
+        "en": "Multilingual transcription, including Cantonese, focused on recognition quality. Needs more memory and storage.",
+        "zh": "多语言转写，支持粤语，更侧重识别质量，内存与存储需求更高。",
+        "zht": "多語言轉寫，支援粵語，更側重辨識品質，記憶體與儲存需求更高。"
+      },
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-large-v3-turbo-q5_0.bin",
+      "file": "ggml-large-v3-turbo-q5_0.bin",
+      "size": 574041195,
+      "sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2"
+    },
+    {
+      "id": "qwen3-1.7b-q8",
+      "category": "text_generation",
+      "engine": "llama.cpp",
+      "name": "Qwen3 1.7B Q8_0",
+      "label": {
+        "en": "Standard · Qwen3 1.7B Q8_0",
+        "zh": "标准版 · Qwen3 1.7B Q8_0",
+        "zht": "標準版 · Qwen3 1.7B Q8_0"
+      },
+      "description": {
+        "en": "Small text model for local context compaction; runs on most devices.",
+        "zh": "用于本地上下文压缩的小型文本模型，大多数设备都能运行。",
+        "zht": "用於本機上下文壓縮的小型文字模型，大多數裝置都能執行。"
+      },
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/90862c4b9d2787eaed51d12237eafdfe7c5f6077/Qwen3-1.7B-Q8_0.gguf",
+      "file": "Qwen3-1.7B-Q8_0.gguf",
+      "size": 1834426016,
+      "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a"
+    },
+    {
+      "id": "qwen3-4b-q4",
+      "category": "text_generation",
+      "engine": "llama.cpp",
+      "name": "Qwen3 4B Q4_K_M",
+      "label": {
+        "en": "Enhanced · Qwen3 4B Q4_K_M",
+        "zh": "增强版 · Qwen3 4B Q4_K_M",
+        "zht": "增強版 · Qwen3 4B Q4_K_M"
+      },
+      "description": {
+        "en": "Larger text model for local context compaction with better summaries; needs more memory.",
+        "zh": "用于本地上下文压缩的较大文本模型，摘要质量更好，需要更多内存。",
+        "zht": "用於本機上下文壓縮的較大文字模型，摘要品質更好，需要更多記憶體。"
+      },
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+      "file": "Qwen3-4B-Q4_K_M.gguf",
+      "size": 2497280256,
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+    }
+  ]
+}
