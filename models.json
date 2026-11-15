@@ -6,10 +6,11 @@
       "category": "speech_transcription",
       "engine": "whisper.cpp",
       "name": "Whisper Small Q5",
+      "tier": "light",
       "label": {
-        "en": "Standard · Small Q5",
-        "zh": "标准版 · Small Q5",
-        "zht": "標準版 · Small Q5"
+        "en": "Small Q5",
+        "zh": "Small Q5",
+        "zht": "Small Q5"
       },
       "description": {
         "en": "Multilingual transcription with lower storage and memory use. Recommended for everyday dictation.",
@@ -26,10 +27,11 @@
       "category": "speech_transcription",
       "engine": "whisper.cpp",
       "name": "Whisper Large-v3-Turbo Q5",
+      "tier": "enhanced",
       "label": {
-        "en": "Enhanced · Large-v3-Turbo Q5",
-        "zh": "增强版 · Large-v3-Turbo Q5",
-        "zht": "增強版 · Large-v3-Turbo Q5"
+        "en": "Large-v3-Turbo Q5",
+        "zh": "Large-v3-Turbo Q5",
+        "zht": "Large-v3-Turbo Q5"
       },
       "description": {
         "en": "Multilingual transcription, including Cantonese, focused on recognition quality. Needs more memory and storage.",
@@ -46,10 +48,11 @@
       "category": "text_generation",
       "engine": "llama.cpp",
       "name": "Qwen3 1.7B Q8_0",
+      "tier": "light",
       "label": {
-        "en": "Standard · Qwen3 1.7B Q8_0",
-        "zh": "标准版 · Qwen3 1.7B Q8_0",
-        "zht": "標準版 · Qwen3 1.7B Q8_0"
+        "en": "Qwen3 1.7B Q8_0",
+        "zh": "Qwen3 1.7B Q8_0",
+        "zht": "Qwen3 1.7B Q8_0"
       },
       "description": {
         "en": "Small text model for local context compaction; runs on most devices.",
@@ -66,10 +69,11 @@
       "category": "text_generation",
       "engine": "llama.cpp",
       "name": "Qwen3 4B Q4_K_M",
+      "tier": "enhanced",
       "label": {
-        "en": "Enhanced · Qwen3 4B Q4_K_M",
-        "zh": "增强版 · Qwen3 4B Q4_K_M",
-        "zht": "增強版 · Qwen3 4B Q4_K_M"
+        "en": "Qwen3 4B Q4_K_M",
+        "zh": "Qwen3 4B Q4_K_M",
+        "zht": "Qwen3 4B Q4_K_M"
       },
       "description": {
         "en": "Larger text model for local context compaction with better summaries; needs more memory.",
