@@ -62,6 +62,8 @@
       "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/90862c4b9d2787eaed51d12237eafdfe7c5f6077/Qwen3-1.7B-Q8_0.gguf",
       "file": "Qwen3-1.7B-Q8_0.gguf",
       "size": 1834426016,
+      "context": 40960,
+      "output": 32768,
       "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a"
     },
     {
@@ -83,6 +85,8 @@
       "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
       "file": "Qwen3-4B-Q4_K_M.gguf",
       "size": 2497280256,
+      "context": 40960,
+      "output": 32768,
       "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
     },
     {
@@ -104,7 +108,15 @@
       "url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF/resolve/bb2838fedba59f599c0fadafaf570d1184a567c6/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic.Q4_K_M.gguf",
       "file": "DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic.Q4_K_M.gguf",
       "size": 2783449152,
-      "sha256": "1f4fc7260a536f3fbbb9bf23fe85f6fe7e544b7a858bedb6fc7f7000e7622b81"
+      "context": 262144,
+      "output": 32768,
+      "sha256": "1f4fc7260a536f3fbbb9bf23fe85f6fe7e544b7a858bedb6fc7f7000e7622b81",
+      "vision": {
+        "url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF/resolve/bb2838fedba59f599c0fadafaf570d1184a567c6/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic.mmproj-Q8_0.gguf",
+        "file": "DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic.mmproj-Q8_0.gguf",
+        "size": 366895008,
+        "sha256": "8213ca8a0b3fa60d0c592af4d8acc7b7fce79927629eade8563e8a35fb0a6972"
+      }
     },
     {
       "id": "deepseek-v4-pro-qwen3.5-9b-heretic-q4",
@@ -125,7 +137,15 @@
       "url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF/resolve/a713868aa6cd2df2225dee8f77d1b8b07414d742/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic.Q4_K_M.gguf",
       "file": "DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic.Q4_K_M.gguf",
       "size": 5780092768,
-      "sha256": "b4363b5710a29a03cab49bc10df92ca688f891eba1a63cae912e4d96f3fd7a65"
+      "context": 262144,
+      "output": 32768,
+      "sha256": "b4363b5710a29a03cab49bc10df92ca688f891eba1a63cae912e4d96f3fd7a65",
+      "vision": {
+        "url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF/resolve/a713868aa6cd2df2225dee8f77d1b8b07414d742/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic.mmproj-Q8_0.gguf",
+        "file": "DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic.mmproj-Q8_0.gguf",
+        "size": 624230112,
+        "sha256": "21b2f36f6a4fd8302b68ebd4fc81cd62e12acaa0d6034a24e2dd6817cd5ce643"
+      }
     }
   ]
 }
