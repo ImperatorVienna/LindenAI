@@ -69,6 +69,21 @@
           }
         }
       }
+    },
+    "tesseract": {
+      "name": "Tesseract",
+      "license": "Apache-2.0",
+      "platforms": {
+        "linux-x86_64-cpu": {
+          "version": "5.5.4",
+          "path": "linux-x86_64-cpu/tesseract-5.5.4-linux-x86_64-cpu.tar.gz",
+          "size": 6336420,
+          "sha256": "9d821bb35e6fce17c2256a0c897f3e294314ca42941f355fe8bda6000b1e64a9",
+          "executables": {
+            "tesseract": "tesseract"
+          }
+        }
+      }
     }
   }
 }
