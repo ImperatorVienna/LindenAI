@@ -9,7 +9,10 @@
           "version": "2.56.0",
           "path": "linux-x86_64-cpu/git-2.56.0-linux-x86_64-cpu.tar.gz",
           "size": 21805836,
-          "sha256": "e96e11d0c996bcb787aa9c4f10c890b426b3550cb80a91305158b5fd357633b6"
+          "sha256": "e96e11d0c996bcb787aa9c4f10c890b426b3550cb80a91305158b5fd357633b6",
+          "executables": {
+            "git": "launcher/git"
+          }
         }
       }
     },
@@ -21,7 +24,10 @@
           "version": "1.9.5",
           "path": "linux-x86_64-cpu/whisper.cpp-1.9.5-linux-x86_64-cpu.tar.gz",
           "size": 2099369,
-          "sha256": "1fa2c361e8b699ade5d9c791801bf56aa5a58dedc9ea026ae42dc0111f9f84e2"
+          "sha256": "1fa2c361e8b699ade5d9c791801bf56aa5a58dedc9ea026ae42dc0111f9f84e2",
+          "executables": {
+            "whisper-cli": "whisper-cli"
+          }
         }
       }
     },
@@ -33,13 +39,19 @@
           "version": "1.0.0",
           "path": "linux-x86_64-cpu/llama.cpp-1.0.0-linux-x86_64-cpu.tar.gz",
           "size": 11453985,
-          "sha256": "a05a3e03d1ebe0ef6d39de470bd5ba0fb818470b8111e911101a741468cea4f1"
+          "sha256": "a05a3e03d1ebe0ef6d39de470bd5ba0fb818470b8111e911101a741468cea4f1",
+          "executables": {
+            "llama-server": "llama-server"
+          }
         },
         "linux-x86_64-vulkan": {
           "version": "1.0.0",
           "path": "linux-x86_64-vulkan/llama.cpp-1.0.0-linux-x86_64-vulkan.tar.gz",
           "size": 24613287,
-          "sha256": "7da074ce38bc2bbc499abc44130dfd31457564e5e4e2e08669eeddc1de814cb9"
+          "sha256": "7da074ce38bc2bbc499abc44130dfd31457564e5e4e2e08669eeddc1de814cb9",
+          "executables": {
+            "llama-server": "llama-server"
+          }
         }
       }
     },
@@ -51,7 +63,10 @@
           "version": "0.1.17",
           "path": "linux-x86_64-cpu/office-oxide-0.1.17-linux-x86_64-cpu.tar.gz",
           "size": 2714904,
-          "sha256": "ef3fc39843183924337180db43ff9c509739ea790d9ff5759d442fcc179d61af"
+          "sha256": "ef3fc39843183924337180db43ff9c509739ea790d9ff5759d442fcc179d61af",
+          "executables": {
+            "office-oxide": "office-oxide"
+          }
         }
       }
     }
