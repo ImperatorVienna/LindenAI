@@ -92,8 +92,8 @@
         "linux-x86_64-vulkan": {
           "version": "master-1127-79dc7ca",
           "path": "linux-x86_64-vulkan/stable-diffusion.cpp-master-1127-79dc7ca-linux-x86_64-vulkan.tar.gz",
-          "size": 34111408,
-          "sha256": "03bdd7ec11f35e812e6205dd5d2ef8250dd4159d4c2db0d96c9c44a99f7aae2b",
+          "size": 34112342,
+          "sha256": "637030482421b39b46dea6c8c1d1f3762268186a4b733c6745727042035be993",
           "executables": {
             "sd-cli": "sd-cli"
           }
@@ -107,8 +107,8 @@
         "linux-x86_64-cpu": {
           "version": "973517b",
           "path": "linux-x86_64-cpu/acestep.cpp-973517b-linux-x86_64-cpu.tar.gz",
-          "size": 2800014,
-          "sha256": "0b6531aaf51019b408450df40118c119599a361ae708d58e8dd2221c7b69f553",
+          "size": 2806183,
+          "sha256": "dc26bb2f10942dd5b3691311eb8ce92f9df4cc80438dd555d98d693170509ca1",
           "executables": {
             "ace-server": "ace-server"
           }
@@ -116,8 +116,8 @@
         "linux-x86_64-vulkan": {
           "version": "973517b",
           "path": "linux-x86_64-vulkan/acestep.cpp-973517b-linux-x86_64-vulkan.tar.gz",
-          "size": 15952731,
-          "sha256": "8804f1e4ccd4200f4ff23b8cd6dba00ed322292b6c11b0e9b829481d5823c331",
+          "size": 15959237,
+          "sha256": "c1da76223507a3e5d57b8a0ffae546bd44fa4449c2e8ca5fd947efcd10e45567",
           "executables": {
             "ace-server": "ace-server"
           }
