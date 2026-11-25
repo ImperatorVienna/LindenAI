@@ -180,39 +180,6 @@
       ]
     },
     {
-      "id": "qwen3-tts-1.7b-base-q4",
-      "category": "speech_synthesis",
-      "engine": "llama.cpp",
-      "name": "Qwen3-TTS 1.7B Base Q4_K_M",
-      "tier": "light",
-      "label": {
-        "en": "Qwen3-TTS 1.7B Base Q4_K_M",
-        "zh": "Qwen3-TTS 1.7B Base Q4_K_M",
-        "zht": "Qwen3-TTS 1.7B Base Q4_K_M"
-      },
-      "description": {
-        "en": "Multilingual speech synthesis with llama.cpp. A reference voice improves quality.",
-        "zh": "通过 llama.cpp 进行多语言语音合成。提供参考声音可以改善效果。",
-        "zht": "透過 llama.cpp 進行多語言語音合成。提供參考聲音可以改善效果。"
-      },
-      "files": [
-        {
-          "role": "model",
-          "url": "https://huggingface.co/ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF/resolve/ca27d74/Qwen3-TTS-12Hz-1.7B-Base-Q4_K_M.gguf",
-          "file": "Qwen3-TTS-12Hz-1.7B-Base-Q4_K_M.gguf",
-          "size": 1035965280,
-          "sha256": "8d18c94acb2addd042f97da63c98be144eafa76d0d9495177eab65130cf85129"
-        },
-        {
-          "role": "audio",
-          "url": "https://huggingface.co/ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF/resolve/ca27d74/mmproj-Qwen3-TTS-12Hz-1.7B-Base-Q8_0.gguf",
-          "file": "mmproj-Qwen3-TTS-12Hz-1.7B-Base-Q8_0.gguf",
-          "size": 446422912,
-          "sha256": "6fd65188839bcd6ecc91b277ad471e22a0edfada4699a0fe82f1165c18cfcce2"
-        }
-      ]
-    },
-    {
       "id": "qwen-image-2.1-q4-k",
       "category": "image_generation",
       "engine": "stable-diffusion.cpp",
@@ -265,6 +232,72 @@
           "qwen_image_2_1_prefix_cache_type": "q8_0"
         },
         "video": null
+      }
+    },
+    {
+      "id": "minimax-h3-fl2va-pruned-q4-k-m",
+      "category": "video_generation",
+      "engine": "stable-diffusion.cpp",
+      "name": "MiniMax H3 FL2VA Pruned Q4_K_M",
+      "tier": "enhanced",
+      "label": {
+        "en": "MiniMax H3 FL2VA Pruned Q4_K_M",
+        "zh": "MiniMax H3 FL2VA Pruned Q4_K_M",
+        "zht": "MiniMax H3 FL2VA Pruned Q4_K_M"
+      },
+      "description": {
+        "en": "Generates video with stereo audio from text or a starting frame. The complete download is about 22.4 GB. The MiniMax H3 Community License does not permit use or distribution in the EU, UK, US or South Korea; separate authorization is required there.",
+        "zh": "根据文字或起始画面生成带立体声音频的视频。完整下载约 22.4 GB。MiniMax H3 社区许可不授权在欧盟、英国、美国及韩国使用或分发；这些地区需要另行取得授权。",
+        "zht": "根據文字或起始畫面生成附立體聲音訊的影片。完整下載約 22.4 GB。MiniMax H3 社群授權不允許在歐盟、英國、美國及韓國使用或散布；這些地區需要另行取得授權。"
+      },
+      "files": [
+        {
+          "role": "diffusion-model",
+          "url": "https://huggingface.co/leejet/MiniMax-H3-GGUF/resolve/eee1dd2f05b755b28bd1b785925cbfeebfcba9d9/minimax_h3_fl2va_pruned-Q4_K_M.gguf",
+          "file": "diffusion_models/minimax_h3_fl2va_pruned-Q4_K_M.gguf",
+          "size": 11420663904,
+          "sha256": "dd948e08ad0ba3c71bd42f368e283dd82e790f5122a63b276e22a3e0283d0c10"
+        },
+        {
+          "role": "llm",
+          "url": "https://huggingface.co/PrunaAI/P-Image-OSS-Comfy/resolve/177745a635feb2f0adf3db3693297cb63fea3dda/text_encoders/p-h3-image_text_encoder_int8_convrot.safetensors",
+          "file": "text_encoders/p-h3-image_text_encoder_int8_convrot.safetensors",
+          "size": 5120870504,
+          "sha256": "fb42c9ff0597e61729475d0b48b69b591ffe06d0b442a79dde22b14fadbe1c0f"
+        },
+        {
+          "role": "vae",
+          "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/4b53a35191437de05370da548e59aeabe2a5a09a/vae/minimax_h3_video_vae_fp16.safetensors",
+          "file": "vae/minimax_h3_video_vae_fp16.safetensors",
+          "size": 5207808496,
+          "sha256": "7c1f131492e7eddacaac9069a61b81bdd39de5cc96561e677c5eab1cdce5e522"
+        },
+        {
+          "role": "audio-vae",
+          "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/4b53a35191437de05370da548e59aeabe2a5a09a/vae/minimax_h3_audio_vae_fp32.safetensors",
+          "file": "vae/minimax_h3_audio_vae_fp32.safetensors",
+          "size": 605254808,
+          "sha256": "8e505d95dd1561d47abd43d4238fd40d9bb1ae9e147ed0a4cba778d76ae4db48"
+        }
+      ],
+      "recipe": {
+        "files": {
+          "diffusion-model": "diffusion_models/minimax_h3_fl2va_pruned-Q4_K_M.gguf",
+          "llm": "text_encoders/p-h3-image_text_encoder_int8_convrot.safetensors",
+          "vae": "vae/minimax_h3_video_vae_fp16.safetensors",
+          "audio-vae": "vae/minimax_h3_audio_vae_fp32.safetensors"
+        },
+        "options": {
+          "cfg_scale": 1.0,
+          "flow_shift": 12.0,
+          "offload_to_cpu": true
+        },
+        "video": {
+          "width": 864,
+          "height": 480,
+          "frames": 56,
+          "fps": 24
+        }
       }
     }
   ]
