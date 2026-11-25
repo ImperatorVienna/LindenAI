@@ -1,0 +1,270 @@
+{
+  "version": 2,
+  "models": [
+    {
+      "id": "whisper-small-q5",
+      "category": "speech_transcription",
+      "engine": "whisper.cpp",
+      "name": "Whisper Small Q5",
+      "tier": "light",
+      "label": {
+        "en": "Small Q5",
+        "zh": "Small Q5",
+        "zht": "Small Q5"
+      },
+      "description": {
+        "en": "Multilingual transcription with lower storage and memory use. Recommended for everyday dictation.",
+        "zh": "多语言转写，存储与内存占用更低，适合日常语音输入，默认推荐。",
+        "zht": "多語言轉寫，儲存與記憶體占用更低，適合日常語音輸入，預設推薦。"
+      },
+      "files": [
+        {
+          "role": "model",
+          "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-small-q5_1.bin",
+          "file": "ggml-small-q5_1.bin",
+          "size": 190085487,
+          "sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb"
+        }
+      ]
+    },
+    {
+      "id": "whisper-turbo-q5",
+      "category": "speech_transcription",
+      "engine": "whisper.cpp",
+      "name": "Whisper Large-v3-Turbo Q5",
+      "tier": "enhanced",
+      "label": {
+        "en": "Large-v3-Turbo Q5",
+        "zh": "Large-v3-Turbo Q5",
+        "zht": "Large-v3-Turbo Q5"
+      },
+      "description": {
+        "en": "Multilingual transcription, including Cantonese, focused on recognition quality. Needs more memory and storage.",
+        "zh": "多语言转写，支持粤语，更侧重识别质量，内存与存储需求更高。",
+        "zht": "多語言轉寫，支援粵語，更側重辨識品質，記憶體與儲存需求更高。"
+      },
+      "files": [
+        {
+          "role": "model",
+          "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-large-v3-turbo-q5_0.bin",
+          "file": "ggml-large-v3-turbo-q5_0.bin",
+          "size": 574041195,
+          "sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2"
+        }
+      ]
+    },
+    {
+      "id": "qwen3-1.7b-q8",
+      "category": "text_generation",
+      "engine": "llama.cpp",
+      "name": "Qwen3 1.7B Q8_0",
+      "tier": "light",
+      "label": {
+        "en": "Qwen3 1.7B Q8_0",
+        "zh": "Qwen3 1.7B Q8_0",
+        "zht": "Qwen3 1.7B Q8_0"
+      },
+      "description": {
+        "en": "Small text model for local context compaction; runs on most devices.",
+        "zh": "用于本地摘要写作的小型文本模型，大多数设备都能运行。",
+        "zht": "用於本機摘要寫作的小型文字模型，大多數裝置都能執行。"
+      },
+      "context": 40960,
+      "output": 32768,
+      "files": [
+        {
+          "role": "model",
+          "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/90862c4b9d2787eaed51d12237eafdfe7c5f6077/Qwen3-1.7B-Q8_0.gguf",
+          "file": "Qwen3-1.7B-Q8_0.gguf",
+          "size": 1834426016,
+          "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a"
+        }
+      ]
+    },
+    {
+      "id": "qwen3-4b-q4",
+      "category": "text_generation",
+      "engine": "llama.cpp",
+      "name": "Qwen3 4B Q4_K_M",
+      "tier": "enhanced",
+      "label": {
+        "en": "Qwen3 4B Q4_K_M",
+        "zh": "Qwen3 4B Q4_K_M",
+        "zht": "Qwen3 4B Q4_K_M"
+      },
+      "description": {
+        "en": "Larger text model for local context compaction with better summaries; needs more memory.",
+        "zh": "用于本地摘要写作的较大文本模型，摘要质量更好，需要更多内存。",
+        "zht": "用於本機摘要寫作的較大文字模型，摘要品質更好，需要更多記憶體。"
+      },
+      "context": 40960,
+      "output": 32768,
+      "files": [
+        {
+          "role": "model",
+          "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+          "file": "Qwen3-4B-Q4_K_M.gguf",
+          "size": 2497280256,
+          "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v4-pro-qwen3.5-4b-heretic-q4",
+      "category": "text_generation",
+      "engine": "llama.cpp",
+      "name": "DeepSeek-V4-Pro Qwen3.5 4B Heretic Q4_K_M",
+      "tier": "light",
+      "label": {
+        "en": "DeepSeek-V4-Pro Qwen3.5 4B Heretic Q4_K_M",
+        "zh": "DeepSeek-V4-Pro Qwen3.5 4B Heretic Q4_K_M",
+        "zht": "DeepSeek-V4-Pro Qwen3.5 4B Heretic Q4_K_M"
+      },
+      "description": {
+        "en": "Community fine-tune of Qwen3.5 4B, distilled from DeepSeek-V4-Pro math and science answers. Refusals removed (Heretic): it answers almost every request, refusing 5 of 100 in the author's test, including ones the original declines. Stronger reasoning for its size; runs on most devices.",
+        "zh": "Qwen3.5 4B 的社区微调版，用 DeepSeek-V4-Pro 的数学与理科回答蒸馏。已去除拒答（Heretic）：几乎有问必答，作者测试 100 条请求仅拒答 5 条，原模型会拒绝的请求也会回答。同等体积下推理更强，大多数设备都能运行。",
+        "zht": "Qwen3.5 4B 的社群微調版，以 DeepSeek-V4-Pro 的數學與理科回答蒸餾。已移除拒答（Heretic）：幾乎有問必答，作者測試 100 條請求僅拒答 5 條，原模型會拒絕的請求也會回答。同等體積下推理更強，大多數裝置都能執行。"
+      },
+      "context": 262144,
+      "output": 32768,
+      "files": [
+        {
+          "role": "model",
+          "url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF/resolve/bb2838fedba59f599c0fadafaf570d1184a567c6/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic.Q4_K_M.gguf",
+          "file": "DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic.Q4_K_M.gguf",
+          "size": 2783449152,
+          "sha256": "1f4fc7260a536f3fbbb9bf23fe85f6fe7e544b7a858bedb6fc7f7000e7622b81"
+        },
+        {
+          "role": "vision",
+          "url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF/resolve/bb2838fedba59f599c0fadafaf570d1184a567c6/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic.mmproj-Q8_0.gguf",
+          "file": "DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic.mmproj-Q8_0.gguf",
+          "size": 366895008,
+          "sha256": "8213ca8a0b3fa60d0c592af4d8acc7b7fce79927629eade8563e8a35fb0a6972"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v4-pro-qwen3.5-9b-heretic-q4",
+      "category": "text_generation",
+      "engine": "llama.cpp",
+      "name": "DeepSeek-V4-Pro Qwen3.5 9B Heretic Q4_K_M",
+      "tier": "enhanced",
+      "label": {
+        "en": "DeepSeek-V4-Pro Qwen3.5 9B Heretic Q4_K_M",
+        "zh": "DeepSeek-V4-Pro Qwen3.5 9B Heretic Q4_K_M",
+        "zht": "DeepSeek-V4-Pro Qwen3.5 9B Heretic Q4_K_M"
+      },
+      "description": {
+        "en": "Community fine-tune of Qwen3.5 9B, distilled from DeepSeek-V4-Pro math and science answers. Refusals removed (Heretic): it answers almost every request, refusing 3 of 100 in the author's test, including ones the original declines. Better quality than the 4B version; needs more memory.",
+        "zh": "Qwen3.5 9B 的社区微调版，用 DeepSeek-V4-Pro 的数学与理科回答蒸馏。已去除拒答（Heretic）：几乎有问必答，作者测试 100 条请求仅拒答 3 条，原模型会拒绝的请求也会回答。质量高于 4B 版，需要更多内存。",
+        "zht": "Qwen3.5 9B 的社群微調版，以 DeepSeek-V4-Pro 的數學與理科回答蒸餾。已移除拒答（Heretic）：幾乎有問必答，作者測試 100 條請求僅拒答 3 條，原模型會拒絕的請求也會回答。品質高於 4B 版，需要更多記憶體。"
+      },
+      "context": 262144,
+      "output": 32768,
+      "files": [
+        {
+          "role": "model",
+          "url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF/resolve/a713868aa6cd2df2225dee8f77d1b8b07414d742/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic.Q4_K_M.gguf",
+          "file": "DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic.Q4_K_M.gguf",
+          "size": 5780092768,
+          "sha256": "b4363b5710a29a03cab49bc10df92ca688f891eba1a63cae912e4d96f3fd7a65"
+        },
+        {
+          "role": "vision",
+          "url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF/resolve/a713868aa6cd2df2225dee8f77d1b8b07414d742/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic.mmproj-Q8_0.gguf",
+          "file": "DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic.mmproj-Q8_0.gguf",
+          "size": 624230112,
+          "sha256": "21b2f36f6a4fd8302b68ebd4fc81cd62e12acaa0d6034a24e2dd6817cd5ce643"
+        }
+      ]
+    },
+    {
+      "id": "qwen3-tts-1.7b-base-q4",
+      "category": "speech_synthesis",
+      "engine": "llama.cpp",
+      "name": "Qwen3-TTS 1.7B Base Q4_K_M",
+      "tier": "light",
+      "label": {
+        "en": "Qwen3-TTS 1.7B Base Q4_K_M",
+        "zh": "Qwen3-TTS 1.7B Base Q4_K_M",
+        "zht": "Qwen3-TTS 1.7B Base Q4_K_M"
+      },
+      "description": {
+        "en": "Multilingual speech synthesis with llama.cpp. A reference voice improves quality.",
+        "zh": "通过 llama.cpp 进行多语言语音合成。提供参考声音可以改善效果。",
+        "zht": "透過 llama.cpp 進行多語言語音合成。提供參考聲音可以改善效果。"
+      },
+      "files": [
+        {
+          "role": "model",
+          "url": "https://huggingface.co/ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF/resolve/ca27d74/Qwen3-TTS-12Hz-1.7B-Base-Q4_K_M.gguf",
+          "file": "Qwen3-TTS-12Hz-1.7B-Base-Q4_K_M.gguf",
+          "size": 1035965280,
+          "sha256": "8d18c94acb2addd042f97da63c98be144eafa76d0d9495177eab65130cf85129"
+        },
+        {
+          "role": "audio",
+          "url": "https://huggingface.co/ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF/resolve/ca27d74/mmproj-Qwen3-TTS-12Hz-1.7B-Base-Q8_0.gguf",
+          "file": "mmproj-Qwen3-TTS-12Hz-1.7B-Base-Q8_0.gguf",
+          "size": 446422912,
+          "sha256": "6fd65188839bcd6ecc91b277ad471e22a0edfada4699a0fe82f1165c18cfcce2"
+        }
+      ]
+    },
+    {
+      "id": "qwen-image-2.1-int8",
+      "category": "image_generation",
+      "engine": "stable-diffusion.cpp",
+      "name": "Qwen-Image 2.1 INT8",
+      "tier": "enhanced",
+      "label": {
+        "en": "Qwen-Image 2.1 INT8",
+        "zh": "Qwen-Image 2.1 INT8",
+        "zht": "Qwen-Image 2.1 INT8"
+      },
+      "description": {
+        "en": "Original Qwen-Image 2.1 weights for local image generation. Research and evaluation license; requires substantial memory.",
+        "zh": "原版 Qwen-Image 2.1 本地生图权重。仅限研究与评估许可，需要较大内存。",
+        "zht": "原版 Qwen-Image 2.1 本機生圖權重。僅限研究與評估授權，需要較大記憶體。"
+      },
+      "files": [
+        {
+          "role": "diffusion-model",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/aacf31a6d48e707f352ecba714cee0680da3479b/diffusion_models/qwen_image_2.1_int8_convrot.safetensors",
+          "file": "diffusion_models/qwen_image_2.1_int8_convrot.safetensors",
+          "size": 7256783064,
+          "sha256": "cb74113cb03faecd79611b01fd7fd642f0aa60d6f0b95086abee214d75eaa57d"
+        },
+        {
+          "role": "llm",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/aacf31a6d48e707f352ecba714cee0680da3479b/text_encoders/qwen3vl_8b_int8_convrot.safetensors",
+          "file": "text_encoders/qwen3vl_8b_int8_convrot.safetensors",
+          "size": 9350798360,
+          "sha256": "8bfd0f6e12abf2d2d697ecc888e5e90b0d6741d6708f05799f53afa560452e8f"
+        },
+        {
+          "role": "vae",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/aacf31a6d48e707f352ecba714cee0680da3479b/vae/qwen_image_2.1_vae_bf16.safetensors",
+          "file": "vae/qwen_image_2.1_vae_bf16.safetensors",
+          "size": 675509688,
+          "sha256": "bb21f7473051e1ac368515dd3f2e15cd44d7a11748ee8823e1ddca3e4876b7c9"
+        }
+      ],
+      "recipe": {
+        "files": {
+          "diffusion-model": "diffusion_models/qwen_image_2.1_int8_convrot.safetensors",
+          "llm": "text_encoders/qwen3vl_8b_int8_convrot.safetensors",
+          "vae": "vae/qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "options": {
+          "steps": 40,
+          "cfg_scale": 6.0,
+          "sampling_method": "euler",
+          "offload_to_cpu": true
+        },
+        "video": null
+      }
+    }
+  ]
+}
