@@ -213,35 +213,35 @@
       ]
     },
     {
-      "id": "qwen-image-2.1-int8",
+      "id": "qwen-image-2.1-q4-k",
       "category": "image_generation",
       "engine": "stable-diffusion.cpp",
-      "name": "Qwen-Image 2.1 INT8",
+      "name": "Qwen-Image 2.1 Q4_K",
       "tier": "enhanced",
       "label": {
-        "en": "Qwen-Image 2.1 INT8",
-        "zh": "Qwen-Image 2.1 INT8",
-        "zht": "Qwen-Image 2.1 INT8"
+        "en": "Qwen-Image 2.1 Q4_K",
+        "zh": "Qwen-Image 2.1 Q4_K",
+        "zht": "Qwen-Image 2.1 Q4_K"
       },
       "description": {
-        "en": "Original Qwen-Image 2.1 weights for local image generation. Research and evaluation license; requires substantial memory.",
-        "zh": "原版 Qwen-Image 2.1 本地生图权重。仅限研究与评估许可，需要较大内存。",
-        "zht": "原版 Qwen-Image 2.1 本機生圖權重。僅限研究與評估授權，需要較大記憶體。"
+        "en": "Quantized original Qwen-Image 2.1 for local image generation. About 9.9 GB to download; 24 GB system RAM recommended. Qwen Research license.",
+        "zh": "原版 Qwen-Image 2.1 量化权重用于本地生图。下载约 9.9 GB，建议 24 GB 系统内存。遵循 Qwen Research 许可。",
+        "zht": "原版 Qwen-Image 2.1 量化權重用於本機生圖。下載約 9.9 GB，建議 24 GB 系統記憶體。遵循 Qwen Research 授權。"
       },
       "files": [
         {
           "role": "diffusion-model",
-          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/aacf31a6d48e707f352ecba714cee0680da3479b/diffusion_models/qwen_image_2.1_int8_convrot.safetensors",
-          "file": "diffusion_models/qwen_image_2.1_int8_convrot.safetensors",
-          "size": 7256783064,
-          "sha256": "cb74113cb03faecd79611b01fd7fd642f0aa60d6f0b95086abee214d75eaa57d"
+          "url": "https://huggingface.co/leejet/Qwen-Image-2.1-GGUF/resolve/0bca76da6edd8a18211e9717454615c1bbaaf6ed/qwen_image_2.1-Q4_K.gguf",
+          "file": "diffusion_models/qwen_image_2.1-Q4_K.gguf",
+          "size": 4197494816,
+          "sha256": "29f9c83c249ff0292fb2943fceddfa2319b446601866c82a4f8be062abea72c2"
         },
         {
           "role": "llm",
-          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/aacf31a6d48e707f352ecba714cee0680da3479b/text_encoders/qwen3vl_8b_int8_convrot.safetensors",
-          "file": "text_encoders/qwen3vl_8b_int8_convrot.safetensors",
-          "size": 9350798360,
-          "sha256": "8bfd0f6e12abf2d2d697ecc888e5e90b0d6741d6708f05799f53afa560452e8f"
+          "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF/resolve/f982a07559d4a2f6c8744d840bf6fccab30eea96/Qwen3VL-8B-Instruct-Q4_K_M.gguf",
+          "file": "text_encoders/Qwen3VL-8B-Instruct-Q4_K_M.gguf",
+          "size": 5027784800,
+          "sha256": "67d1659bfe71b89d50b45a4ad1a9e5b997e5bb16ce5da66a6a6167abd569e9e2"
         },
         {
           "role": "vae",
@@ -253,15 +253,16 @@
       ],
       "recipe": {
         "files": {
-          "diffusion-model": "diffusion_models/qwen_image_2.1_int8_convrot.safetensors",
-          "llm": "text_encoders/qwen3vl_8b_int8_convrot.safetensors",
+          "diffusion-model": "diffusion_models/qwen_image_2.1-Q4_K.gguf",
+          "llm": "text_encoders/Qwen3VL-8B-Instruct-Q4_K_M.gguf",
           "vae": "vae/qwen_image_2.1_vae_bf16.safetensors"
         },
         "options": {
           "steps": 40,
           "cfg_scale": 6.0,
           "sampling_method": "euler",
-          "offload_to_cpu": true
+          "offload_to_cpu": true,
+          "qwen_image_2_1_prefix_cache_type": "q8_0"
         },
         "video": null
       }
