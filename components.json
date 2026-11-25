@@ -55,21 +55,6 @@
         }
       }
     },
-    "office-oxide": {
-      "name": "office-oxide",
-      "license": "MIT",
-      "platforms": {
-        "linux-x86_64-cpu": {
-          "version": "0.1.17",
-          "path": "linux-x86_64-cpu/office-oxide-0.1.17-linux-x86_64-cpu.tar.gz",
-          "size": 2714904,
-          "sha256": "ef3fc39843183924337180db43ff9c509739ea790d9ff5759d442fcc179d61af",
-          "executables": {
-            "office-oxide": "office-oxide"
-          }
-        }
-      }
-    },
     "tesseract": {
       "name": "Tesseract",
       "license": "Apache-2.0",
